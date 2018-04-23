@@ -8,38 +8,38 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/nicolasdossantos/Downloads/StringLib/cmake-build-debug"/>
+				<Option working_dir="/Users/nicolasdossantos/Documents/GitHub/StringLib2/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/nicolasdossantos/Downloads/StringLib/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/nicolasdossantos/Downloads/StringLib/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/nicolasdossantos/Downloads/StringLib/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/nicolasdossantos/Downloads/StringLib/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/nicolasdossantos/Documents/GitHub/StringLib2/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/nicolasdossantos/Documents/GitHub/StringLib2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/nicolasdossantos/Documents/GitHub/StringLib2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/nicolasdossantos/Documents/GitHub/StringLib2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/nicolasdossantos/Downloads/StringLib/cmake-build-debug"/>
+				<Option working_dir="/Users/nicolasdossantos/Documents/GitHub/StringLib2/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/nicolasdossantos/Downloads/StringLib/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/nicolasdossantos/Downloads/StringLib/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/nicolasdossantos/Downloads/StringLib/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/nicolasdossantos/Downloads/StringLib/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/nicolasdossantos/Documents/GitHub/StringLib2/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/nicolasdossantos/Documents/GitHub/StringLib2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/nicolasdossantos/Documents/GitHub/StringLib2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/nicolasdossantos/Documents/GitHub/StringLib2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/nicolasdossantos/Downloads/StringLib/cmake-build-debug"/>
+				<Option working_dir="/Users/nicolasdossantos/Documents/GitHub/StringLib2/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/nicolasdossantos/Downloads/StringLib/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/nicolasdossantos/Downloads/StringLib/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/nicolasdossantos/Downloads/StringLib/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/nicolasdossantos/Downloads/StringLib/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/nicolasdossantos/Documents/GitHub/StringLib2/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/nicolasdossantos/Documents/GitHub/StringLib2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/nicolasdossantos/Documents/GitHub/StringLib2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/nicolasdossantos/Documents/GitHub/StringLib2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="StringLib">
-				<Option output="/Users/nicolasdossantos/Downloads/StringLib/cmake-build-debug/StringLib" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/nicolasdossantos/Downloads/StringLib/cmake-build-debug"/>
+				<Option output="/Users/nicolasdossantos/Documents/GitHub/StringLib2/cmake-build-debug/StringLib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/nicolasdossantos/Documents/GitHub/StringLib2/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -51,15 +51,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/nicolasdossantos/Downloads/StringLib/cmake-build-debug/Makefile&quot;  VERBOSE=1 StringLib"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/nicolasdossantos/Downloads/StringLib/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/nicolasdossantos/Downloads/StringLib/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/nicolasdossantos/Downloads/StringLib/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/nicolasdossantos/Documents/GitHub/StringLib2/cmake-build-debug/Makefile&quot;  VERBOSE=1 StringLib"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/nicolasdossantos/Documents/GitHub/StringLib2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/nicolasdossantos/Documents/GitHub/StringLib2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/nicolasdossantos/Documents/GitHub/StringLib2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="StringLib/fast">
-				<Option output="/Users/nicolasdossantos/Downloads/StringLib/cmake-build-debug/StringLib" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/nicolasdossantos/Downloads/StringLib/cmake-build-debug"/>
+				<Option output="/Users/nicolasdossantos/Documents/GitHub/StringLib2/cmake-build-debug/StringLib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/nicolasdossantos/Documents/GitHub/StringLib2/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -71,17 +71,17 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/nicolasdossantos/Downloads/StringLib/cmake-build-debug/Makefile&quot;  VERBOSE=1 StringLib/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/nicolasdossantos/Downloads/StringLib/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/nicolasdossantos/Downloads/StringLib/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/nicolasdossantos/Downloads/StringLib/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/nicolasdossantos/Documents/GitHub/StringLib2/cmake-build-debug/Makefile&quot;  VERBOSE=1 StringLib/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/nicolasdossantos/Documents/GitHub/StringLib2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/nicolasdossantos/Documents/GitHub/StringLib2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/nicolasdossantos/Documents/GitHub/StringLib2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/nicolasdossantos/Downloads/StringLib/main.c">
+		<Unit filename="/Users/nicolasdossantos/Documents/GitHub/StringLib2/main.c">
 			<Option target="StringLib"/>
 		</Unit>
-		<Unit filename="/Users/nicolasdossantos/Downloads/StringLib/CMakeLists.txt">
+		<Unit filename="/Users/nicolasdossantos/Documents/GitHub/StringLib2/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
