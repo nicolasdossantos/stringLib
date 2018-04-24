@@ -45,63 +45,22 @@ char *concat(char *source, char *dest);
 
 char *repeat(char *s, int x, char sep);
 
+char *replace(char *s, char *pat, char *rep); //TODO: This.
+
+char *str_connect(char **strs, int n, char c);
+
+void rm_empties(char **words);
+
+char **str_chop_all(char *s, char c);
 
 
 
-
-
-
-        int main() {
+int main() {
 
 
 
     return 0;
 }
-
-
-
-
-
-
-
-char *repeat(char *s, int x, char sep){
-
-    if(s){
-        int i, count = 0;
-
-        while(s[count] != '\0'){
-            ++count;
-        }
-        char *newArray = malloc(count * x + 1);
-        if(newArray){
-            char *na = newArray;
-            for(i = 0; i < x; ++i){
-                const char *p = s;
-                while(*p){
-                    *na++ = *p++;
-
-                }
-            }
-            *na = '\0';
-        }
-        return newArray;
-    }else{
-        return NULL;
-    }
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -427,6 +386,122 @@ int ends_with_ignore_case(char *s, char *suff) {
         suff = init;
     }
     return 0;
+}
+
+char *repeat(char *s, int x, char sep){
+    int count = 0;
+    while(s[count] != '\0'){
+        ++count;
+    }
+    int size = (count * x) + (count * (x-1)) + 1;
+    char *cache = calloc(size, sizeof(char));
+    char *charPointer = cache;
+
+    int i = 0;
+    for(i = 0; i < x; i++){
+        if (i != 0){
+            *charPointer = sep; //copies letter
+            charPointer++;
+        }
+
+        int j = 0;
+        for (j = 0; j < count; j++){ //copies word
+            *charPointer = s[j];
+            charPointer++;
+        }
+    }
+
+    *charPointer = '\0';
+
+    return cache;
+
+}
+
+char *replace(char *s, char *pat, char *rep){
+
+}
+
+char *str_connect(char **strs, int n, char c){
+    int i = 0;
+    int size = 1;
+    char *cache = calloc(1, sizeof(char));
+    int counter = 0;
+    for (i = 0; i < n; i++){
+        int j = 0;
+        while(*(strs[i] + j) != '\0'){ //copies word
+            *(cache + counter) = *(strs[i] + j);
+            cache = realloc(cache, ++size * sizeof(char));
+            counter++;
+            j++;
+        }
+
+        if (i != n-1){ //copies letter
+            *(cache + counter) = c;
+            counter++;
+            cache = realloc(cache, ++size * sizeof(char));
+        }
+    }
+    *(cache + counter) = '\0';
+    return cache;
+}
+
+void rm_empties(char **words){
+    int counter = 0;
+    int size = 0;
+    char **pos = words;
+    char **copyPos = words;
+    char *n = *words;
+    while (*pos != NULL){
+        if(**pos == '\0'){
+            pos++;
+            n = *pos;
+        }else{
+            *copyPos = n;
+            copyPos++;
+            pos++;
+            n = *pos;
+            counter++;
+        }
+        size++;
+    }
+    int i;
+    //sets rest of value to null since realloc gives a SIGBART error and we haven't learned what that is
+    for(i = counter; i < size; i++){
+        words[i] = NULL;
+    }
+
+}
+
+char **str_chop_all(char *s, char c){
+    int cacheSize = 1;
+    char **cache = malloc(cacheSize * sizeof(*s));
+    char **pos = cache;
+    int wordSize = 1;
+    char *wordCache;
+    int wordCachePos = 0;
+    char *charPos = s;
+
+    while (*charPos != '\0'){
+        wordSize = 1;
+        wordCache = malloc(wordSize * sizeof(char));
+        wordCachePos = 0;
+
+        while (*charPos != c && *charPos != '\0'){
+            *(wordCache + wordCachePos) = *charPos;
+            wordCache = realloc(wordCache, ++wordSize * sizeof(char));
+            wordCachePos++;
+            charPos++;
+        }
+        while(*charPos == c){
+            charPos++;
+        }
+        *(wordCache + wordCachePos) = '\0';
+        cache = realloc(cache, ++cacheSize * sizeof(*s));
+        *pos = wordCache;
+        pos++;
+    }
+
+    return cache;
 }
 
 char *concat(char *source, char *dest){
