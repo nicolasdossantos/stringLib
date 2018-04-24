@@ -1,5 +1,6 @@
 #ifndef MY_STR_H
 #define MY_STR_H
+#include <stdlib.h>
 #include <ctype.h>
 int all_letters(char *s);
 

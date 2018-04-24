@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/d/Github/stringLib/my_str.h
+ctype.h
+-
+
+/cygdrive/d/Github/stringLib/strtester.c
+stdio.h
+-
+my_str.h
+/cygdrive/d/Github/stringLib/my_str.h
+

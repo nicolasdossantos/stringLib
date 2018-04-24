@@ -37,6 +37,42 @@
 					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Github/stringLib/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="strtester">
+				<Option output="/cygdrive/d/Github/stringLib/cmake-build-debug/strtester.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/d/Github/stringLib/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../lib/../include/w32api"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Github/stringLib/cmake-build-debug/Makefile&quot;  VERBOSE=1 strtester"/>
+					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Github/stringLib/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Github/stringLib/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Github/stringLib/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="strtester/fast">
+				<Option output="/cygdrive/d/Github/stringLib/cmake-build-debug/strtester.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/d/Github/stringLib/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/6.4.0/../../../../lib/../include/w32api"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Github/stringLib/cmake-build-debug/Makefile&quot;  VERBOSE=1 strtester/fast"/>
+					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Github/stringLib/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Github/stringLib/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/d/Github/stringLib/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="StringLib">
 				<Option output="/cygdrive/d/Github/stringLib/cmake-build-debug/StringLib.exe" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/cygdrive/d/Github/stringLib/cmake-build-debug"/>
@@ -76,6 +112,9 @@
 		</Build>
 		<Unit filename="/cygdrive/d/Github/stringLib/main.c">
 			<Option target="StringLib"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/Github/stringLib/strtester.c">
+			<Option target="strtester"/>
 		</Unit>
 		<Unit filename="/cygdrive/d/Github/stringLib/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

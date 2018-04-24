@@ -60,6 +60,43 @@ CMAKE_SOURCE_DIR = /cygdrive/d/Github/stringLib
 CMAKE_BINARY_DIR = /cygdrive/d/Github/stringLib/cmake-build-debug
 
 #=============================================================================
+# Target rules for target CMakeFiles/strtester.dir
+
+# All Build rule for target.
+CMakeFiles/strtester.dir/all:
+	$(MAKE) -f CMakeFiles/strtester.dir/build.make CMakeFiles/strtester.dir/depend
+	$(MAKE) -f CMakeFiles/strtester.dir/build.make CMakeFiles/strtester.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/cygdrive/d/Github/stringLib/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target strtester"
+.PHONY : CMakeFiles/strtester.dir/all
+
+# Include target in all.
+all: CMakeFiles/strtester.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/strtester.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/d/Github/stringLib/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/strtester.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/d/Github/stringLib/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/strtester.dir/rule
+
+# Convenience name for target.
+strtester: CMakeFiles/strtester.dir/rule
+
+.PHONY : strtester
+
+# clean rule for target.
+CMakeFiles/strtester.dir/clean:
+	$(MAKE) -f CMakeFiles/strtester.dir/build.make CMakeFiles/strtester.dir/clean
+.PHONY : CMakeFiles/strtester.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/strtester.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/StringLib.dir
 
 # All Build rule for target.
