@@ -1,7 +1,7 @@
 #include "my_str.h"
 
 char *pad(char *s, int d) {
-    char *new = s;
+    char *newS = s;
 
     size_t i = 0;
     if (lengthStr(s) % d == 0) {
@@ -15,10 +15,10 @@ char *pad(char *s, int d) {
     }
 
     for (size_t j = lengthStr(s); j < i; j++) {
-        new[j] = ' ';
+        newS[j] = ' ';
 
     }
 
 
-    return new;
+    return newS;
 }
