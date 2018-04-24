@@ -1,7 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/StringLib.dir/main.c.o"
   "StringLib.pdb"
-  "StringLib"
+  "StringLib.exe"
+  "libStringLib.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

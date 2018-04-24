@@ -1,4 +1,4 @@
-/Applications/CLion.app/Contents/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/nicolasdossantos/Documents/GitHub/StringLib2
+C:\Users\Thomas\.CLion2017.3\system\cygwin_cmake\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /cygdrive/d/Github/stringLib
 -- Configuring done
 -- Generating done
--- Build files have been written to: /Users/nicolasdossantos/Documents/GitHub/StringLib2/cmake-build-debug
+-- Build files have been written to: /cygdrive/d/Github/stringLib/cmake-build-debug

@@ -1,1 +1,1 @@
-/Library/Developer/CommandLineTools/usr/bin/cc -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/StringLib.dir/main.c.o  -o StringLib 
+/usr/bin/cc -g  -Wl,--enable-auto-import CMakeFiles/StringLib.dir/main.c.o  -o StringLib.exe -Wl,--out-implib,libStringLib.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
