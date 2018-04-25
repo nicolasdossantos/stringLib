@@ -111,19 +111,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named strtester
-
-# Build rule for target.
-strtester: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 strtester
-.PHONY : strtester
-
-# fast build rule for target.
-strtester/fast:
-	$(MAKE) -f CMakeFiles/strtester.dir/build.make CMakeFiles/strtester.dir/build
-.PHONY : strtester/fast
-
-#=============================================================================
 # Target rules for targets named StringLib
 
 # Build rule for target.
@@ -163,33 +150,6 @@ main.c.s:
 	$(MAKE) -f CMakeFiles/StringLib.dir/build.make CMakeFiles/StringLib.dir/main.c.s
 .PHONY : main.c.s
 
-strtester.o: strtester.c.o
-
-.PHONY : strtester.o
-
-# target to build an object file
-strtester.c.o:
-	$(MAKE) -f CMakeFiles/strtester.dir/build.make CMakeFiles/strtester.dir/strtester.c.o
-.PHONY : strtester.c.o
-
-strtester.i: strtester.c.i
-
-.PHONY : strtester.i
-
-# target to preprocess a source file
-strtester.c.i:
-	$(MAKE) -f CMakeFiles/strtester.dir/build.make CMakeFiles/strtester.dir/strtester.c.i
-.PHONY : strtester.c.i
-
-strtester.s: strtester.c.s
-
-.PHONY : strtester.s
-
-# target to generate assembly for a file
-strtester.c.s:
-	$(MAKE) -f CMakeFiles/strtester.dir/build.make CMakeFiles/strtester.dir/strtester.c.s
-.PHONY : strtester.c.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -198,14 +158,10 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... strtester"
 	@echo "... StringLib"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... strtester.o"
-	@echo "... strtester.i"
-	@echo "... strtester.s"
 .PHONY : help
 
 

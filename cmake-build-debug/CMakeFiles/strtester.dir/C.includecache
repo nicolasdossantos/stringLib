@@ -7,6 +7,8 @@
 #IncludeRegexTransform: 
 
 /cygdrive/d/Github/stringLib/my_str.h
+stdlib.h
+-
 ctype.h
 -
 

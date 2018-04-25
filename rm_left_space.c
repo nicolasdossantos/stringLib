@@ -21,12 +21,13 @@ void rm_left_space(char *s) {
             y++;
             counter++;
         }
+        temp[y] = '\0';
 
-        size_t size = lengthStr(s) - x;
-
-        for (size_t z = lengthStr(s); z >= (size); z--) {
-            temp[z] = NULL;
-        }
+//        size_t size = lengthStr(s) - x;
+//
+//        for (size_t z = lengthStr(s); z >= (size); z--) {
+//            temp[z] = NULL;
+//        }
     }
 
 }

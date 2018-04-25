@@ -5,4 +5,3 @@ project(StringLib C)
 set(CMAKE_C_STANDARD 11)
 
 add_executable(StringLib main.c)
-add_executable(strtester strtester.c)

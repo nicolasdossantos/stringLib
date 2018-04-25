@@ -3,36 +3,37 @@
 
 int main(void){
 
+
     //Test all_Letters
     printf("%d\n", all_letters("hello"));
     printf("%d\n", all_letters("Hello123"));
 
     //Test num_in_range
-    printf("%s\n", num_in_range("hello", 'a', 'g' ));
+    printf("%d\n", num_in_range("hello", 'a', 'g' ));
 
     //Test diff
-    printf("%s\n", diff("hello", "HellRaiser"));
+    printf("%d\n", diff("hello", "HellRaiser"));
 
     //Test Shorten
-    char *test = "Hello there";
+    char test[] = "Hello there";
     shorten(test, 4);
     puts(test);
 
     //Test len_diff
-    printf("%s\n", len_diff("hello", "hello there"));
+    printf("%d\n", len_diff("hello", "hello there"));
 
     //Test rm_left_space
-    char *spacel = "     Howdy";
+    char spacel[] = "     Howdy";
     rm_left_space(spacel);
     puts(spacel);
 
     //Test rm_right_space
-    char *spacer = "Howdy     ";
+    char spacer[] = "Howdy     ";
     rm_right_space(spacer);
     puts(spacer);
 
     //Test rm_space
-    char *space = "     Howdy      ";
+    char space[] = "     Howdy      ";
     rm_space(space);
     puts(space);
 
@@ -53,7 +54,7 @@ int main(void){
     puts(str_zip("Hello", "howdy"));
 
     //Test Capitalize
-    char *lower = "hey you, how are you?";
+    char lower[] = "hey you, how are you?";
     capitalize(lower);
     puts(lower);
 
@@ -61,19 +62,20 @@ int main(void){
     printf("%d\n", strcmp_ign_case("Hello", "Alright"));
 
     //Test take_last
-    char *test2 = "Hello there";
+    char test2[] = "Hello there";
     take_last(test2, 5);
     puts(test2);
 
     //Test dedup
-    puts(dedup("Heeello"));
+    char dd[] = "Heeello";
+    puts(dedup(dd));
 
     //Test pad
-    char *c1 = "Hi";
+    char c1[] = "Hi";
     puts(pad(c1, 6));
 
     //Test ends_with_ignore_case
-    printf("%s\n", ends_with_ignore_case("running", "ing"));
+    printf("%d\n", ends_with_ignore_case("running", "ing"));
 
 
 
@@ -100,4 +102,7 @@ int main(void){
     //Test str_chop_all
     char *s = "Woah there, buddy";
     char **chop = str_chop_all(s, ' ');
+    printf("%s", chop[0]);
+
+    return 0;
 }
